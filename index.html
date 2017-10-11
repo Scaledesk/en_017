@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Encode</title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<nav id="nav-main">
+    <ul class="opr-nav">
+        <li><a data-target="1">first</a></li>
+        <li><a data-target="2">second</a></li>
+        <li><a data-target="3">third</a></li>
+        <li><a data-target="4">fourth</a></li>
+         <li><a data-target="5">five</a></li>
+    </ul>
+</nav>
+
+<div class="opr-container">
+    <div class="opr-page opr-current first" data-target="1">
+        <div class="opr-next"></div>
+    </div>
+    <div class="opr-page second" data-target="2">
+        <div class="opr-next"></div>
+    </div>
+    <div class="opr-page third" data-target="3">
+        <div class="opr-next"></div>
+    </div>
+    <div class="opr-page fourth" data-target="4">
+       <div class="opr-next"></div>
+    </div>
+      <div class="opr-page fivth" data-target="5">
+        <p>&nbsp;</p>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/opr.js"></script>
+
+</body>
+</html>
