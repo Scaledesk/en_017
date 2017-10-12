@@ -16,12 +16,12 @@
   
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-     
+        <!-- <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">-->
 
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
 
@@ -39,37 +39,146 @@
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav opr-nav navbar-right">
-               <li><a  data-target="0" class="buzz opr-page  opr-current">first</a></li>
-        <li><a  data-target="1" class="buzz opr-page">second</a></li>
-        <li><a data-target="2" class="buzz opr-page ">third</a></li>
-        <li><a data-target="3" class="buzz opr-page ">fourth</a></li>
-         <li><a data-target="4" class="buzz opr-page ">five</a></li>
-             <li><a href="#" class="calltoaction">Login</a></li>
+               <li><a  href="#oneblock" data-target="0" class="buzz opr-page  opr-current" id="one">first</a></li>
+        <li><a href="#twoblock" data-target="1" class="buzz opr-page" id="two">second</a></li>
+        <li><a href="#threeblock" data-target="2" class="buzz opr-page" id="three">third</a></li>
+        <li><a href="#fourblock" data-target="3" class="buzz opr-page" id="four">fourth</a></li>
+         <li><a href="#fiveblock" data-target="4" class="buzz opr-page" id="five">five</a></li>
+             <li><a href="#" class="calltoaction" id="six">Login</a></li>
         </ul>
       
     </div>
 </nav>
 
 <div class="opr-container">
-    <div class="opr-page opr-current first" data-target="0">
+    <div class="opr-page block opr-current first" data-target="0" id="oneblock">
         <video autoplay loop id="video-background" muted plays-inline>
   <source src="../en_017/images/big-bang-explosion.mp4" type="video/mp4">
 </video>
+        
+            <div id="fp-nav" class="right" style="margin-top: -43.5px;">
+            <ul>
+                <li><a class="active opr-current opr-page" data-target="0"><span></span></a>
+                    <div class="fp-tooltip right">Home</div>
+                </li>
+                <li><a class="opr-page" data-target="1"><span></span></a>
+                    <div class="fp-tooltip right">About</div>
+                </li>
+                <li><a class="opr-page" data-target="2"><span></span></a>
+                    <div class="fp-tooltip right">Examples</div>
+                </li>
+                <li><a class="opr-page" data-target="3"><span></span></a>
+                    <div class="fp-tooltip right">Contact</div>
+                </li>
+                 <li><a class="opr-page" data-target="4"><span></span></a>
+                    <div class="fp-tooltip right">last</div>
+                </li>
+            </ul>
+        </div>
         <div class="opr-next"></div>
     </div>
-    <div class="opr-page second" data-target="1">
+    <div class="opr-page block second" data-target="1" id="twoblock">
+             <div id="fp-nav" class="right" style="margin-top: -43.5px;">
+            <ul>
+                <li><a href="#" class="opr-page" data-target="0"><span></span></a>
+                    <div class="fp-tooltip right">Home</div>
+                </li>
+                <li><a href="#" class="active opr-current opr-page" data-target="1"><span></span></a>
+                    <div class="fp-tooltip right">About</div>
+                </li>
+                <li><a href="#" class="opr-page" data-target="2"><span></span></a>
+                    <div class="fp-tooltip right">Examples</div>
+                </li>
+                <li><a href="#" class="opr-page" data-target="3"><span></span></a>
+                    <div class="fp-tooltip right">Contact</div>
+                </li>
+                 <li><a href="#" class="opr-page" data-target="4"><span></span></a>
+                    <div class="fp-tooltip right">last</div>
+                </li>
+            </ul>
+        </div>
+        <script>
+          if($('#twoblock[data-target="1"]').hasClass('opr-current')){ 
+           alert("two!");
+       }
+    
+        
+        </script>
+        <div class="opr-next"></div>
+          
+    </div>
+    <div class="opr-page block third" data-target="2" id="threeblock">
+             <div id="fp-nav" class="right" style="margin-top: -43.5px;">
+            <ul>
+                <li><a href="#" class="opr-page" data-target="0"><span></span></a>
+                    <div class="fp-tooltip right">Home</div>
+                </li>
+                <li><a href="#" class="opr-page" data-target="1"><span></span></a>
+                    <div class="fp-tooltip right">About</div>
+                </li>
+                <li><a href="#" class="active opr-current opr-page" data-target="2"><span></span></a>
+                    <div class="fp-tooltip right">Examples</div>
+                </li>
+                <li><a href="#" class="opr-page" data-target="3"><span></span></a>
+                    <div class="fp-tooltip right">Contact</div>
+                </li>
+                 <li><a href="#" class="opr-page" data-target="4"><span></span></a>
+                    <div class="fp-tooltip right">last</div>
+                </li>
+            </ul>
+        </div>
         <div class="opr-next"></div>
     </div>
-    <div class="opr-page third" data-target="2">
-        <div class="opr-next"></div>
-    </div>
-    <div class="opr-page fourth" data-target="3">
+    <div class="opr-page block fourth" data-target="3" id="fourblock">
+              <div id="fp-nav" class="right" style="margin-top: -43.5px;">
+            <ul>
+                <li><a href="#" data-target="0"><span></span></a>
+                    <div class="fp-tooltip right">Home</div>
+                </li>
+                <li><a href="#" class="opr-page" data-target="1"><span></span></a>
+                    <div class="fp-tooltip right">About</div>
+                </li>
+                <li><a href="#" class="opr-page" data-target="2"><span></span></a>
+                    <div class="fp-tooltip right">Examples</div>
+                </li>
+                <li><a href="#" class="active opr-current opr-page" data-target="3"><span></span></a>
+                    <div class="fp-tooltip right">Contact</div>
+                </li>
+                 <li><a href="#" class="opr-page" data-target="4"><span></span></a>
+                    <div class="fp-tooltip right">last</div>
+                </li>
+            </ul>
+        </div>
        <div class="opr-next"></div>
     </div>
-      <div class="opr-page fivth" data-target="4">
+      <div class="opr-page block fivth" data-target="4" id="fiveblock">
+             <div id="fp-nav" class="right" style="margin-top: -43.5px;">
+            <ul>
+                <li><a href="#" class="opr-page" data-target="0"><span></span></a>
+                    <div class="fp-tooltip right">Home</div>
+                </li>
+                <li><a href="#" class="opr-page"  data-target="1"><span></span></a>
+                    <div class="fp-tooltip right">About</div>
+                </li>
+                <li><a href="#" class="opr-page"  data-target="2"><span></span></a>
+                    <div class="fp-tooltip right">Examples</div>
+                </li>
+                <li><a href="#" class="opr-page" data-target="3"><span></span></a>
+                    <div class="fp-tooltip right">Contact</div>
+                </li>
+                 <li><a href="#" class="active opr-current opr-page" data-target="4"><span></span></a>
+                    <div class="fp-tooltip right">last</div>
+                </li>
+            </ul>
+        </div>
         <p>&nbsp;</p>
     </div>
+         
+ 
 </div> 
+        
+    
+  
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
         <script src="js/vendor/bootstrap.min.js"></script>

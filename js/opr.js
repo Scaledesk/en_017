@@ -1,4 +1,6 @@
 (function ($) {
+    
+    
 
     var oprCur = $('.opr-current'); // always stores the current active slide
     var animationRunning = false;
@@ -30,6 +32,7 @@
             if (oprHasNext(slide)) {
                 animationRunning = true;
                 var next = slide.next('.opr-page');
+               
                 slide.addClass('opr-animate'); // put slide in front (z-index :100)
                 slide.removeClass('opr-current'); // remove current status from old slide
                 next.addClass('opr-current'); // add current status to new slide
