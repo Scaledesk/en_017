@@ -46,7 +46,16 @@ a {
 /*.nav a:hover:after {
   width: 100%;
 }*/
-
+.custm-logo{
+    width: 80px;
+ 
+     padding: 0px; 
+  
+}
+.custm-logo img{
+    width: 100%; 
+  
+}
 #nav-main {
 /*  position: fixed;
   right: 0;
@@ -60,7 +69,7 @@ a {
     background-image: none;
     border: none;
     z-index: 999;
-    padding: 25px;
+       padding: 20px 25px;
 }
 
 #nav-main .navbar-brand {
@@ -226,7 +235,7 @@ a {
             }
 #section6 .intro{
     position: relative;
-    padding: 0 40px;
+    padding: 0px 90px 0 90px;
     top:17%;
 }
     #section6  h2 {
@@ -512,6 +521,8 @@ media query
 */
 
 @media (max-width: 768px) {
+    .custm-logo {
+        width: 50px;}
     
       #myVideo{
              
@@ -519,10 +530,18 @@ media query
     }
     h1 {
         font-size: 32px;}
+    #section1 .layer {
+    position: absolute;
+    z-index: 5;
+    width: 95%;
+    padding: 8px;
+    left: 0;
+    top: 32%;
+        height: 100%;}
     
     #section1 h2 {
   
-        font-size: 32px;}
+        font-size: 25px;}
     #section1 p {
 
         font-size: 1.2em;}
@@ -540,16 +559,38 @@ media query
  
         padding: 20px;}
     #section3 .intro {
-        top: 5%;}
+       top: 12%;}
       #section4 .intro {
         top: 5%;}
     #section5 .intro {
-        top: 5%;}
-    #section6  h2 {
-        font-size: 30px;}
+       top: 12%;}
+   #section6 h2 {
+    font-size: 25px;}
       #section6  p {
         font-size: 20px;}
     .arrow {
     text-align: center;
         margin: 32% 0 0%;}
+    #section6 .intro {
+       padding: 0px 40px 0 30px;
+    top: 15%;}
+    .box-contact {
+    margin-top: 20px;
+    padding: 15px 20px;
+        height: 300px;}
+    .contact-form .form-control {
+    font-size: 13px;
+    border-bottom: 1px solid #ccc;
+  
+        height: 30px;}
+    .contact-form textarea {
+  
+        height: 90px!important;}
+
+.box-contact.flex-box {
+height:auto;
+    display: block;
+    }
+    .social-icon {
+        margin: 10px 0 10px;}
 }
