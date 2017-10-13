@@ -1,29 +1,99 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
- <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-       <title>Encode</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Encod</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords"  content="" />
+        <meta name="Resource-type" content="Document" />
+
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+              <link rel="stylesheet" href="css/bootstrap.min.css">
   
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <!-- <link rel="stylesheet" type="text/css" href="css/jquery.singlefull.css">-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
+        <link rel="stylesheet" type="text/css" href="css/examples.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+         <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+        <!--[if IE]>
+<script type="text/javascript">
+var console = { log: function() {} };
+</script>
+<![endif]-->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+        <script src="https://use.fontawesome.com/c5c25a361c.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#pagepiling').pagepiling({
+                    menu: '#menu',
+                    anchors: ['page1', 'page2', 'page3', 'page4' , 'page5'],
+                    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4' , '#2C3E60'],
+                    navigation: {
+                        'position': 'right',
+                        'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4', 'Pgae 5']
+                    },
+                    afterRender: function(){
+                        //playing the video
+                        $('video').get(0).play();
+                    },
+                    afterLoad: function(anchorLink, index){
+                        $('#callbacksDiv').append('<p>afterLoad - anchorLink:' + anchorLink + " index:" + index + '</p>');
+
+                        //section 2
+                        if(index == 2){
+                            //moving the image
+                            $('#section2').find('.intro').delay(100).animate({
+                                left: '0%'
+                            }, 1500, 'easeOutExpo', function(){
+                                $('#section2').find('p').first().fadeIn(700, function(){
+                                    $('#section2').find('p').fadeIn(600);
+                                    $('#section2').find('p.anchor').fadeIn(500);
+                                });
+                            });
 
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+                        }
+
+                        //section 3
+                        if(anchorLink == 'page3'){
+                            //section 3
+                            $('#section3').find('.intro').delay(100).animate({
+                                left: '0%'
+                            }, 1500, 'easeOutExpo');
+                        }
+
+                        deleteLog = true;
+                    }
+                });
+            });
+        </script>
+
+        <style>
+
+
+        </style>
+
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <body>
 
 
+<!--        <ul id="menu">
+            <li data-menuanchor="page1" class="active"><a href="#page1">Page 1</a></li>
+            <li data-menuanchor="page2"><a href="#page2">Page 2</a></li>
+            <li data-menuanchor="page3"><a href="#page3">Page 3</a></li>
+             <li data-menuanchor="page4"><a href="#page4">Page 4</a></li>
+             <li data-menuanchor="page5"><a href="#page5">Page 5</a></li>
+        </ul>-->
 
 <nav class="navbar navbar-default" id="nav-main">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,160 +108,134 @@
     </div>
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav opr-nav navbar-right">
-               <li><a  href="#oneblock" data-target="0" class="buzz opr-page  opr-current" id="one">first</a></li>
-        <li><a href="#twoblock" data-target="1" class="buzz opr-page" id="two">second</a></li>
-        <li><a href="#threeblock" data-target="2" class="buzz opr-page" id="three">third</a></li>
-        <li><a href="#fourblock" data-target="3" class="buzz opr-page" id="four">fourth</a></li>
-         <li><a href="#fiveblock" data-target="4" class="buzz opr-page" id="five">five</a></li>
+        <ul class="nav navbar-nav opr-nav navbar-right" id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1" class="buzz">first</a></li>
+        <li data-menuanchor="page2"><a href="#page2" class="buzz">second</a></li>
+        <li data-menuanchor="page3"><a href="#page3" class="buzz">third</a></li>
+        <li data-menuanchor="page4"><a href="#page4" class="buzz">fourth</a></li>
+         <li data-menuanchor="page5"><a href="#page5" class="buzz">five</a></li>
              <li><a href="#" class="calltoaction" id="six">Login</a></li>
         </ul>
       
     </div>
 </nav>
 
-<div class="opr-container">
-    <div class="opr-page block opr-current first" data-target="0" id="oneblock">
-        <video autoplay loop id="video-background" muted plays-inline>
-  <source src="../en_017/images/big-bang-explosionnew2.mp4" type="video/mp4">
-</video>
+        <div id="pagepiling">
+            <div class="section" id="section1">
+                <video autoplay loop muted id="myVideo">
+                    <source src="../en_017/images/big-bang-explosionnew2.mp4" type="video/mp4">
+                  <!--  <source src="imgs/flowers.webm" type="video/webm">-->
+                </video>
+                <div class="layer">
+                    <h2>Everything starts with<br> energy</h2>
+                    <p>We are a full service Design studio crafting extraordinary<br> online experiences for oil and gas companies.</p>
+                    <div class="arrow bounce">
+
+                        <a class="fa fa-arrow-down fa-lg" href="#page2"></a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section2">
+                <div class="intro">
+                      <div class="row">
+                 
+                      <div class="col-sm-12 text-left">
+                         
+                          
+                          <h1>Energy <br> to Innovate</h1>
+                           <div class="text-block">
+                          <p>Making your ideas visible GLOBALLY.<br>for oil and gas companies, Encod creates dynamic web solutions</p>
+                      
+                          <p>dynamic web solutions taking your ideas to an astounding </p>
+                          <p>level of brilliance.</p>
+                              </div>
+                          <p class="anchor">
+                           <a href="#" class="calltoaction">Ask for a Quote</a>
+                              </p>
+                          </div>
+                          </div>
+                            
+                </div>
+                <div class="arrow bounce">
+
+                        <a class="fa fa-arrow-down fa-lg" href="#page3"></a>
+
+
+                    </div>
+            </div>
+             <div class="section" id="section3">
+	    	<div class="intro">
+	    		<h1>Energy to Emerge</h1>
+                    <div class="text-block">
+	    		<p>Building companies into BRANDS –.</p>
+                <p>Our branding wing is devoted to ensuring your brand presence in major events –</p>
+                <p>crafting a gripping brand recall value.</p>
+                </div>
+	    	  <p class="anchor">
+                           <a href="#" class="calltoaction">Ask for a Quote</a>
+                              </p>
+	    	</div>
+                   <div class="arrow bounce">
+
+                        <a class="fa fa-arrow-down fa-lg" href="#page4"></a>
+
+
+                    </div>
+	    </div>
+            <div class="section" id="section4">
+                <div class="intro">
+                    <div class="row">
+                  
+                    <div class="col-xs-12 col-sm-4 col-sm-offset-1 text-left">
+                          <h1>Energy <br> to Converge</h1>
+                    </div>
+                        <div class="col-xs-12 col-sm-7">
+                            <div class="margin-t-15p text-justify">
+                             <p>Ensuring every penny of your marketing budget is well spent –</p>
+                                  <p>We transfer your enthusiasm to your customer using METICULOUS</p>
+                                <p>targeted marketing, exploiting the latest technologies.</p>
+                                  <p class="anchor">
+                           <a href="#" class="calltoaction">Ask for a Quote</a>
+                              </p>
+                                </div>
+                        </div>
+                    </div>
+                  
+                
+                </div>
+                <div class="arrow bounce">
+
+                        <a class="fa fa-arrow-down fa-lg" href="#page5"></a>
+
+
+                    </div>
+            </div>
+                <div class="section" id="section5">
+              	<div class="intro">
+	    		<h1>Energy to Inspire</h1>
+                    <div class="text-block">
+	    		<p>Creating POWERFUL and IMPACTFUL content that intrigues/captivates</p>
+                <p>your audience. We give your customers value in perpetuity using stunning</p>
+                <p>editorial and video content by our in-house experts.</p>
+                </div>
+	    	  <p class="anchor">
+                           <a href="#" class="calltoaction">Ask for a Quote</a>
+                              </p>
+	    	</div>
+                <div class="arrow bounce">
+
+                        <a class="fa fa-arrow-up fa-lg" href="#page1"></a>
+
+
+                    </div>
+            </div>
+        </div>
+
         
-            <div id="fp-nav" class="right" style="margin-top: -43.5px;">
-            <ul>
-                <li><a class="active opr-current opr-page" data-target="0"><span></span></a>
-                    <div class="fp-tooltip right">Home</div>
-                </li>
-                <li><a class="opr-page" data-target="1"><span></span></a>
-                    <div class="fp-tooltip right">About</div>
-                </li>
-                <li><a class="opr-page" data-target="2"><span></span></a>
-                    <div class="fp-tooltip right">Examples</div>
-                </li>
-                <li><a class="opr-page" data-target="3"><span></span></a>
-                    <div class="fp-tooltip right">Contact</div>
-                </li>
-                 <li><a class="opr-page" data-target="4"><span></span></a>
-                    <div class="fp-tooltip right">last</div>
-                </li>
-            </ul>
-        </div>
-        <div class="opr-next"></div>
-    </div>
-    <div class="opr-page block second" data-target="1" id="twoblock">
-             <div id="fp-nav" class="right" style="margin-top: -43.5px;">
-            <ul>
-                <li><a href="#" class="opr-page" data-target="0"><span></span></a>
-                    <div class="fp-tooltip right">Home</div>
-                </li>
-                <li><a href="#" class="active opr-current opr-page" data-target="1"><span></span></a>
-                    <div class="fp-tooltip right">About</div>
-                </li>
-                <li><a href="#" class="opr-page" data-target="2"><span></span></a>
-                    <div class="fp-tooltip right">Examples</div>
-                </li>
-                <li><a href="#" class="opr-page" data-target="3"><span></span></a>
-                    <div class="fp-tooltip right">Contact</div>
-                </li>
-                 <li><a href="#" class="opr-page" data-target="4"><span></span></a>
-                    <div class="fp-tooltip right">last</div>
-                </li>
-            </ul>
-        </div>video-background
- 
-        <div class="opr-next"></div>
-          
-    </div>
-    <div class="opr-page block third" data-target="2" id="threeblock">
-             <div id="fp-nav" class="right" style="margin-top: -43.5px;">
-            <ul>
-                <li><a href="#" class="opr-page" data-target="0"><span></span></a>
-                    <div class="fp-tooltip right">Home</div>
-                </li>
-                <li><a href="#" class="opr-page" data-target="1"><span></span></a>
-                    <div class="fp-tooltip right">About</div>
-                </li>
-                <li><a href="#" class="active opr-current opr-page" data-target="2"><span></span></a>
-                    <div class="fp-tooltip right">Examples</div>
-                </li>
-                <li><a href="#" class="opr-page" data-target="3"><span></span></a>
-                    <div class="fp-tooltip right">Contact</div>
-                </li>
-                 <li><a href="#" class="opr-page" data-target="4"><span></span></a>
-                    <div class="fp-tooltip right">last</div>
-                </li>
-            </ul>
-        </div>
-        <div class="opr-next"></div>
-    </div>
-    <div class="opr-page block fourth" data-target="3" id="fourblock">
-              <div id="fp-nav" class="right" style="margin-top: -43.5px;">
-            <ul>
-                <li><a href="#" data-target="0"><span></span></a>
-                    <div class="fp-tooltip right">Home</div>
-                </li>
-                <li><a href="#" class="opr-page" data-target="1"><span></span></a>
-                    <div class="fp-tooltip right">About</div>
-                </li>
-                <li><a href="#" class="opr-page" data-target="2"><span></span></a>
-                    <div class="fp-tooltip right">Examples</div>
-                </li>
-                <li><a href="#" class="active opr-current opr-page" data-target="3"><span></span></a>
-                    <div class="fp-tooltip right">Contact</div>
-                </li>
-                 <li><a href="#" class="opr-page" data-target="4"><span></span></a>
-                    <div class="fp-tooltip right">last</div>
-                </li>
-            </ul>
-        </div>
-       <div class="opr-next"></div>
-    </div>
-      <div class="opr-page block fivth" data-target="4" id="fiveblock">
-             <div id="fp-nav" class="right" style="margin-top: -43.5px;">
-            <ul>
-                <li><a href="#" class="opr-page" data-target="0"><span></span></a>
-                    <div class="fp-tooltip right">Home</div>
-                </li>
-                <li><a href="#" class="opr-page"  data-target="1"><span></span></a>
-                    <div class="fp-tooltip right">About</div>
-                </li>
-                <li><a href="#" class="opr-page"  data-target="2"><span></span></a>
-                    <div class="fp-tooltip right">Examples</div>
-                </li>
-                <li><a href="#" class="opr-page" data-target="3"><span></span></a>
-                    <div class="fp-tooltip right">Contact</div>
-                </li>
-                 <li><a href="#" class="active opr-current opr-page" data-target="4"><span></span></a>
-                    <div class="fp-tooltip right">last</div>
-                </li>
-            </ul>
-        </div>
-        <p>&nbsp;</p>
-    </div>
-         
- 
-</div> 
-        
-    
-  
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-     
-        
-
-<script src="js/jquery.touchSwipe.min.js"></script>
-<script src="js/opr.js"></script>
-           <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+            <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
+        <script src="https://use.fontawesome.com/c5c25a361c.js"></script>
+                    <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

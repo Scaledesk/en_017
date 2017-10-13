@@ -51,7 +51,7 @@ body{
 	color: #f2f2f2;
 }
 h1{
-	font-size: 6em;
+	font-size: 4em;
 }
 p{
 	font-size: 2em;
@@ -122,10 +122,16 @@ p{
 }*/
 
 
+#section2 .intro{
+    padding:20px;
+    width:90%;
+    margin: 0 auto;
+}
 .intro p{
-	width: 50%;
+    color:#fff;
+	width: 100%;
 	margin: 0 auto;
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 .twitter-share-button{
 	position: fixed !important;
@@ -248,12 +254,15 @@ p{
 
 /* Section 1
  * --------------------------------------- */
-#section1 h1{
-	color: #444;
+#section1 h2{
+	color: #fff;
+        font-size: 50px;
 }
 #section1 p{
-	color: #333;
-	color: rgba(0,0,0,0.3);
+	color: #fff;
+    padding-top: 10px;
+    font-size: 1.6em;
+
 }
 #section1 img{
 	margin: 20px 0;
@@ -265,6 +274,15 @@ p{
 #section2 h1,
 #section2 p{
 	z-index: 3;
+}
+.section .calltoaction{
+        margin-top: 18px;
+    width:auto;
+    padding:0 20px;
+     padding-top: 0px!important; 
+     padding-bottom: 0px!important; 
+    border: 0.10rem solid #fff;
+
 }
 #section2 p{
 	opacity: 0.8;
@@ -286,9 +304,7 @@ p{
 	left: 60px;
 	bottom: 0;
 }
-#section3 p{
-	color: #757575;
-}
+
 
 #colors2,
 #colors3{

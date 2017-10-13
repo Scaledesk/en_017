@@ -39,7 +39,9 @@ a {
   transition: 0.3s ease-in-out;
 }
 */
-
+.section .text-block{
+    margin-top:10px;
+}
 
 /*.nav a:hover:after {
   width: 100%;
@@ -103,41 +105,42 @@ a {
 
 
 
-.first {
-  background-color: #333;
+#section1 {
+  background-color: #000!important;
 }
 
-.second {
+#section2 {
 
-     background: url("../images/innovateoption1.jpg") no-repeat; 
-    background-size: cover;
+     background: url("../images/innovateoption1.jpg") no-repeat!important; 
+    background-size: cover!important;
 }
 
 
-.third {
+#section3 {
  
-        background:url("../images/Emergeoption2.jpg") no-repeat; 
-     background-size: cover;
+        background:url("../images/Emergeoption2.jpg") no-repeat!important; 
+     background-size: cover!important;
 }
 
 
-.fourth {
+#section4 {
 
-      background: url("../images/Converge.jpg") no-repeat; 
-     background-size: cover;
+      background: url("../images/Converge.jpg") no-repeat!important; 
+     background-size: cover!important;
 }
 
-.fivth {
+#section5 {
 
-      background:url("../images/Inspireoption1.jpg") no-repeat; 
-     background-size: cover;
+      background:url("../images/Inspireoption1.jpg") no-repeat!important; 
+     background-size: cover!important;
 }
 
-
-
+.margin-t-15p{
+    margin-top:15%;
+}
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  margin: 16% 0 0%;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -158,6 +161,69 @@ a {
 }
 
 
+            #myVideo{
+                position: absolute;
+                z-index: 4;
+                right: 0;
+                bottom: 0;
+                top:0;
+                right:0;
+                width: 100%;
+                height: 92%;
+                background-size: 100% 100%;
+                background-color: black; /* in case the video doesn't fit the whole page*/
+                background-image: /* our video */;
+                background-position: center center;
+                background-size: contain;
+                object-fit: cover; /*cover video background */
+            }
+
+            /* Layer with position absolute in order to have it over the video
+            * --------------------------------------- */
+            #section1 .layer{
+                position: absolute;
+                z-index: 5;
+                width: 100%;
+                left: 0;
+                top: 37%;
+                height: 100%;
+            }
+            #section2 .intro{
+                left: -150%;
+                top:10%;
+                position: relative;
+                 height: 300px;
+            }
+            #section2 p{
+             
+                display: none;
+            }
+          
+            #section3 .intro{
+                   left: 140%;
+   
+                 top: 15%;
+    width: 80%;
+    padding: 40px 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.32);
+    position: relative;
+            }
+            #section4 .intro{
+                 top: 15%;
+                   position: relative;
+              
+            }
+            
+                #section5 .intro{
+    
+                 top: 15%;
+    width: 80%;
+    padding: 40px 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.32);
+    position: relative;
+            }
 /*
 -------------------------------------------------------------------------------------------------------------------------------------
 banner block
@@ -221,7 +287,7 @@ banner block
     padding-bottom: 10px!important;
     border: 0.10rem solid #fff;
     font-size: 18px;
-    font-size: 1.125rem;
+/*    font-size: 1.125rem;*/
     line-height: 2.25;
     color: #fff;
     text-align: center;
@@ -364,4 +430,48 @@ banner block
 #fp-nav ul li .fp-tooltip.left { left: 20px; }
 
 .fp-auto-height.fp-section, .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell { height: auto !important; }
+/*
+-------------------------------------------------------------------------------------------------------------------------------------
+media query
 
+-------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@media (max-width: 768px) {
+    
+      #myVideo{
+             
+               object-fit: fill;
+    }
+    h1 {
+        font-size: 32px;}
+    
+    #section1 h2 {
+  
+        font-size: 32px;}
+    #section1 p {
+
+        font-size: 1.2em;}
+    #section2 .intro {
+
+         top: 0%; 
+    }
+    .intro p {
+
+        font-size: 20px;}
+    .margin-t-15p {
+        margin-top: 3%;}
+    #section4 .intro {
+    top: 5%;
+ 
+        padding: 20px;}
+    #section3 .intro {
+        top: 5%;}
+      #section4 .intro {
+        top: 5%;}
+    #section5 .intro {
+        top: 5%;}
+    .arrow {
+    text-align: center;
+        margin: 32% 0 0%;}
+}
