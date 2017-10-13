@@ -36,11 +36,11 @@ var console = { log: function() {} };
             $(document).ready(function() {
                 $('#pagepiling').pagepiling({
                     menu: '#menu',
-                    anchors: ['page1', 'page2', 'page3', 'page4' , 'page5'],
-                    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4' , '#2C3E60'],
+                    anchors: ['page1', 'page2', 'page3', 'page4' , 'page5' , 'page6'],
+                    sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4' , '#2C3E60' , '#000'],
                     navigation: {
                         'position': 'right',
-                        'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4', 'Pgae 5']
+                        'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4', 'Pgae 5', 'page 6']
                     },
                     afterRender: function(){
                         //playing the video
@@ -114,6 +114,7 @@ var console = { log: function() {} };
         <li data-menuanchor="page3"><a href="#page3" class="buzz">third</a></li>
         <li data-menuanchor="page4"><a href="#page4" class="buzz">fourth</a></li>
          <li data-menuanchor="page5"><a href="#page5" class="buzz">five</a></li>
+            <li data-menuanchor="page6"><a href="#page6" class="buzz">Contact</a></li>
              <li><a href="#" class="calltoaction" id="six">Login</a></li>
         </ul>
       
@@ -223,6 +224,96 @@ var console = { log: function() {} };
 	    	  <p class="anchor">
                            <a href="#" class="calltoaction">Ask for a Quote</a>
                               </p>
+	    	</div>
+                <div class="arrow bounce">
+
+                        <a class="fa fa-arrow-down fa-lg" href="#page6"></a>
+
+
+                    </div>
+            </div>
+                     <div class="section" id="section6">
+              	<div class="intro">
+	    		<h2>CONTACT US</h2>
+                    <div class="row">
+                    <div class="col-md-8">
+                        <div class="box-contact">
+                            <form class="contact-form">
+                        <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="input-field">
+                                                                <input type="text" maxlength="20" class="form-control" required="" placeholder="Name" name="fname">
+                                                                <div>
+                                                              
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div class="col-xs-12">
+                                                            <div class="input-field">
+                                                                <input type="email" class="form-control" required="" placeholder="Email" name="email">
+                                                                <div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                        </div>
+   
+
+                                                             <div class="col-md-12">
+                                                            <div class="input-field">
+                                                                <textarea required="" class="form-control" maxlength="500" placeholder="Message" name="message" id="message"></textarea>
+                                                                <div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                                 
+                                                                 
+                                                           
+                                                        </div>
+                            
+                                                             <div class="col-md-12 text-left">
+                                                            <div class="input-field">
+                                                                <a type="submit" class="calltoaction">
+                                                                    submit
+                                                                </a>
+                                                                
+                                                                <div>
+                                                                
+                                                                </div>
+                                                            </div>
+                                                             
+                                                        </div>
+
+                                                    </div>
+                            </form>
+                        
+                        </div>
+                        </div>
+                         <div class="col-md-4">
+                             <div class="box-contact flex-box">
+                                 <div class="child-flex">
+                             <p>YOU CAN ALSO CONTACT US ON SOCIAL NETWORK</p>
+                                    <span class="social-icon">
+                                        <a href="#" class="fa fa-facebook"></a>
+                                
+                                   <a href="#" class="fa fa-twitter"></a>
+                                     <a href="#" class="fa fa-google"></a>
+                                 </span>
+                                     
+                                     <br>
+                                     
+                                     <p>Mobile: +91 012 013 014</p>
+                                       <p>Mail: dummy@gmail.com</p>
+                                 
+                                 </div>
+                              
+                                 </div>
+                        </div>
+                    </div>
+             
 	    	</div>
                 <div class="arrow bounce">
 
