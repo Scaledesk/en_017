@@ -250,6 +250,9 @@ header
 .arrow:hover,.arrow a:hover{
         color: #59c5bc;
 }
+.arrow a:focus{
+        color: #fff;
+}
 .layer .arrow {
     text-align: center;
     margin: 8% 0 0%;}
@@ -257,6 +260,7 @@ header
 
     margin: 25% 0 0;
 }
+/*
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -274,6 +278,7 @@ header
     transform: translateY(-15px);
   }
 }
+*/
 
 
 /*
