@@ -276,7 +276,7 @@ p{
 	z-index: 3;
 }
 .section .calltoaction{
-         margin-top: 18px;
+         margin-top: 25px;
     border-radius: 25px;
     width: auto;
     padding: 0 20px;
@@ -290,6 +290,10 @@ p{
 .section .calltoaction:hover{
     background: #fff;
     color:#333;
+}
+.calltoaction:focus{
+
+    color:#fff;
 }
 #section2 p{
 	opacity: 0.8;
