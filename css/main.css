@@ -20,7 +20,7 @@ a img {
 body {
   background-color: #ddd;
 /*  font-family: 'Roboto Slab', serif;*/
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #fff;
         overflow: hidden;
 }
@@ -246,6 +246,9 @@ header
 .arrow {
   text-align: center;
   margin: 16% 0 0%;
+}
+.arrow:hover,.arrow a:hover{
+        color: #59c5bc;
 }
 .layer .arrow {
     text-align: center;
