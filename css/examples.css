@@ -276,12 +276,13 @@ p{
 	z-index: 3;
 }
 .section .calltoaction{
-        margin-top: 18px;
-    width:auto;
-    padding:0 20px;
-     padding-top: 0px!important; 
-     padding-bottom: 0px!important; 
-    border: 0.10rem solid #fff;
+         margin-top: 18px;
+    border-radius: 25px;
+    width: auto;
+    padding: 0 20px;
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+    border: 0.15rem solid #fff;
 
 }
 #section2 p{
@@ -328,9 +329,6 @@ p{
 
 /* Section 4
  * --------------------------------------- */
-#section4 p{
-	opacity: 0.6;
-}
 
 /* Overwriting fullPage.js tooltip color
 * --------------------------------------- */

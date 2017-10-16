@@ -40,7 +40,7 @@ var console = { log: function() {} };
                     sectionsColor: ['#bfda00', '#2ebe21', '#2C3E50', '#51bec4' , '#2C3E60' , '#000'],
                     navigation: {
                         'position': 'right',
-                        'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Pgae 4', 'Pgae 5', 'page 6']
+                        'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4', 'Page 5', 'page 6']
                     },
                     afterRender: function(){
                         //playing the video
@@ -76,6 +76,8 @@ var console = { log: function() {} };
                     }
                 });
             });
+
+
         </script>
 
         <style>
@@ -95,31 +97,96 @@ var console = { log: function() {} };
              <li data-menuanchor="page5"><a href="#page5">Page 5</a></li>
         </ul>-->
 
-<nav class="navbar navbar-default" id="nav-main">
-    <!-- Brand and toggle get grouped for better mobile display -->
+<nav class="navbar navbar-default hidden-xs hidden-sm" id="nav-main">
+
     <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+
         <a href="#" class="navbar-brand custm-logo"><img src="images/logo.png"></a>
     </div>
-    <!-- Collection of nav links and other content for toggling -->
+ 
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav opr-nav navbar-right" id="menu">
-        <li data-menuanchor="page1" class="active"><a href="#page1" class="buzz">Home</a></li>
-        <li data-menuanchor="page2"><a href="#page2" class="buzz">Innovate</a></li>
-        <li data-menuanchor="page3"><a href="#page3" class="buzz">Emerge</a></li>
-        <li data-menuanchor="page4"><a href="#page4" class="buzz">Converge</a></li>
-         <li data-menuanchor="page5"><a href="#page5" class="buzz">Inspire</a></li>
-            <li data-menuanchor="page6"><a href="#page6" class="buzz">Contact</a></li>
-            <!-- <li><a href="#" class="calltoaction" id="six">Login</a></li>-->
+            <div class="row">
+                <div class="col-md-11">
+            <span id="collapseitem">
+        <li data-menuanchor="page1" class="active"><a href="#page1">Home</a></li>
+        <li data-menuanchor="page2"><a href="#page2">Innovate</a></li>
+        <li data-menuanchor="page3"><a href="#page3">Emerge</a></li>
+        <li data-menuanchor="page4"><a href="#page4">Converge</a></li>
+         <li data-menuanchor="page5"><a href="#page5">Inspire</a></li>
+            <li data-menuanchor="page6"><a href="#page6">Contact</a></li>
+            </span>
+                    </div>
+
+             <div class="col-md-1">
+            <li id="nav-icon4">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</li>
+                </div>
+                </div>
         </ul>
       
     </div>
 </nav>
+  
+        
+  
+        
+        
+        
+            <!--  navigation on mobile  -->
+    <div class="hidden-md hidden-lg navbar-fixed-top nav-mobile-custom">
+        <div class="hmbr">
+       <a class="navbar-brand" href="/"><img src="images/logo.png" style="margin-top: -9px;
+    height: 70px;"></a>
+
+   <!--<i class="fa fa-lg fa-bars pull-right" id="hamburger-menu-icon-main" aria-hidden="true">
+sgvrgfergerge
+            </i>-->
+            
+                <i class="fa fa-lg fa-bars" id="hamburger-menu-icon-main" aria-hidden="true"></i>
+            
+                <!--      <div class="eins cont pull-right">
+
+                          <img ></div>-->
+
+
+        </div>
+      <div id="navigation-mob">
+
+      </div>
+           <div class="navigation-mob-child">
+
+                <ul>
+                    <a href="/"><li id="mob-subm-1">Home</li></a>
+                    <a href=""><li id="mob-subm-2">Innovate</li></a>
+                    <a href=""><li id="mob-subm-3">
+                       Emerge
+                    </li></a>
+                   <a href=""> <li id="mob-subm-4">
+                      Converge
+                    </li></a>
+                      <a href=""> <li id="mob-subm-4">
+                      Inspire
+                    </li></a>
+                     <a href=""> <li id="mob-subm-4">
+                        CONTACT US
+                    </li></a>
+
+
+
+
+
+                </ul>
+          </div>
+
+
+</div>
+        
+        
 
         <div id="pagepiling">
             <div class="section" id="section1">
@@ -128,7 +195,7 @@ var console = { log: function() {} };
                   <!--  <source src="imgs/flowers.webm" type="video/webm">-->
                 </video>
                 <div class="layer">
-                    <h2>Everything starts with<br> energy</h2>
+                    <h2 class="heading_main">Everything starts with<br> energy</h2>
                     <p>We are a full service Design studio crafting extraordinary<br> online experiences for oil and gas companies.</p>
                     <div class="arrow bounce">
 
@@ -140,24 +207,18 @@ var console = { log: function() {} };
             </div>
             <div class="section" id="section2">
                 <div class="intro">
-                      <div class="row">
-                 
-                      <div class="col-sm-12 text-left">
-                         
+                   
                           
-                          <h1>Energy <br> to Innovate</h1>
+                          <h1 class="heading_main"><span>Energy to </span>Innovate</h1>
                            <div class="text-block">
-                          <p>Making your ideas visible GLOBALLY.<br>for oil and gas companies, Encod creates dynamic web solutions</p>
+                          <p>Making your ideas visible GLOBALLY.Encod creates dynamic web solutions for oil and gas companies, taking your ideas to an astounding level of brilliance.</p>
                       
-                          <p>dynamic web solutions taking your ideas to an astounding </p>
-                          <p>level of brilliance.</p>
+                   
                               </div>
                           <p class="anchor">
                            <a href="#" class="calltoaction">Ask for a Quote</a>
                               </p>
-                          </div>
-                          </div>
-                            
+                   
                 </div>
                 <div class="arrow bounce">
 
@@ -168,14 +229,13 @@ var console = { log: function() {} };
             </div>
              <div class="section" id="section3">
 	    	<div class="intro">
-	    		<h1>Energy to Emerge</h1>
+	    		<h1 class="heading_main text-justify"><span>Energy to</span> Emerge</h1>
                     <div class="text-block">
-	    		<p>Building companies into BRANDS –.</p>
-                <p>Our branding wing is devoted to ensuring your brand presence in major events –</p>
-                <p>crafting a gripping brand recall value.</p>
+	    		<p>Building companies into BRANDS –Our branding wing is devoted to ensuring your brand presence in major events –crafting a gripping brand recall value.</p>
+         
                 </div>
-	    	  <p class="anchor">
-                           <a href="#" class="calltoaction">Ask for a Quote</a>
+	    	  <p class="anchor text-justify">
+                           <a href="#" class="calltoaction">Request a demo</a>
                               </p>
 	    	</div>
                    <div class="arrow bounce">
@@ -187,24 +247,17 @@ var console = { log: function() {} };
 	    </div>
             <div class="section" id="section4">
                 <div class="intro">
-                    <div class="row">
-                  
-                    <div class="col-xs-12 col-sm-4 col-sm-offset-1 text-left">
-                          <h1>Energy <br> to Converge</h1>
-                    </div>
-                        <div class="col-xs-12 col-sm-7">
-                            <div class="margin-t-15p text-justify">
-                             <p>Ensuring every penny of your marketing budget is well spent –</p>
-                                  <p>We transfer your enthusiasm to your customer using METICULOUS</p>
-                                <p>targeted marketing, exploiting the latest technologies.</p>
-                                  <p class="anchor">
+              
+                          <h1 class="heading_main">Energy to <span>Converge</span></h1>
+                 
+                            <div class="text-block">
+                             <p>Ensuring every penny of your marketing budget is well spent – We transfer your enthusiasm to your customer using METICULOUS targeted marketing, exploiting the latest technologies.</p>
+                         
+                                  <p class="anchor text-center">
                            <a href="#" class="calltoaction">Ask for a Quote</a>
                               </p>
                                 </div>
-                        </div>
-                    </div>
-                  
-                
+              
                 </div>
                 <div class="arrow bounce">
 
@@ -215,11 +268,10 @@ var console = { log: function() {} };
             </div>
                 <div class="section" id="section5">
               	<div class="intro">
-	    		<h1>Energy to Inspire</h1>
+	    		<h1 class="heading_main">Energy to <span> Inspire</span></h1>
                     <div class="text-block">
-	    		<p>Creating POWERFUL and IMPACTFUL content that intrigues/captivates</p>
-                <p>your audience. We give your customers value in perpetuity using stunning</p>
-                <p>editorial and video content by our in-house experts.</p>
+	    		<p>Creating POWERFUL and IMPACTFUL content that intrigues/captivates your audience. We give your customers value in perpetuity using stunning editorial and video content by our in-house experts.</p>
+
                 </div>
 	    	  <p class="anchor">
                            <a href="#" class="calltoaction">Ask for a Quote</a>
@@ -234,7 +286,7 @@ var console = { log: function() {} };
             </div>
                      <div class="section" id="section6">
               	<div class="intro">
-	    		<h2>CONTACT US</h2>
+	    		<h2 class="heading_main">CONTACT US</h2>
                     <div class="row">
                     <div class="col-md-8">
                         <div class="box-contact">
