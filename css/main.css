@@ -300,9 +300,9 @@ banner block (first)
             }
             #section2 .intro{
                 left: -150%;
-                top:15%;
+                top:28%;
                 position: relative;
-                 height: 300px;
+              
             }
 #section2 .heading_main{
         transform: rotate(-90deg);
