@@ -361,8 +361,8 @@ banner block (first)
             #section3 .intro{
           left: 140%;
     top: 15%;
-    width: 55%;
-    padding: 32px;
+     width: 80%;
+    padding: 32px 60px;
     margin: 0 auto;
     /* background: rgba(0, 0, 0, 0.32); */
     position: relative;
@@ -406,9 +406,13 @@ banner block (first)
   
 
 #section6 .intro{
-    position: relative;
-    padding: 0px 90px 0 90px;
-    top:17%;
+position: relative;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    top: 12%;
+
+    text-align: justify;
 }
     #section6  h2 {
         font-size: 2em;}
@@ -416,9 +420,18 @@ banner block (first)
         font-size: 1.2em;}
 
 
-
-
-
+    
+    #section6 .margin-t-5p{
+        margin-top: 5%;
+    }
+  #section6 .margin-t-8p{
+        margin-top: 6%;
+    }
+footer{
+        margin-top: 10%;
+    padding:20px;
+    border-top: 1px solid #fff;
+}
 
 #video-background{
     width:100%;
@@ -661,7 +674,7 @@ contact
 
 .contact-form textarea {
     resize: none;
-    height: 150px!important;
+    height: 100px!important;
 }
 .social-icon{
     margin:15px 0 80px;
@@ -714,6 +727,24 @@ padding: 12px;
 }
 
 
+.contact-form .form-control {
+ 
+    width: 82%;
+    float: right;
+}
+.emailclass{
+       float: left!important;
+}
+
+.contactbtn {
+        height: 100px;
+    padding-top: 48px;
+}
+
+.contactbtn .calltoaction{
+        border-radius: 0;
+    padding: 6px 116px;
+}
 
 
 /*
@@ -731,8 +762,9 @@ media query
              
                object-fit: fill;
     }
-    h1 {
-        font-size: 32px;}
+ .heading_main {
+    font-size: 3em!important;
+}
     #section1 .layer {
     position: absolute;
     z-index: 5;
@@ -742,19 +774,61 @@ media query
     top: 32%;
         height: 100%;}
     
-    #section1 h2 {
+  #section1 h2 {
+    font-size: 2.8em!important;
+}
+    
+    .box {
   
-        font-size: 25px;}
+        height: 24em;}
     #section1 p {
 
         font-size: 1.2em;}
     #section2 .intro {
-
-         top: 0%; 
+top: 18%;
     }
+    
+    #section3 .intro {
+   
+        padding: 32px 20px;}
     .intro p {
 
         font-size: 20px;}
+    
+    .right-block {
+    position: absolute;
+    /* top: 16%; */
+    padding: 46px;
+    left: 2em;
+       top: -25em;
+    }
+    
+    .mob .form-control {
+   
+    float:none;
+}
+    .hmbr i {
+           margin-left: 88%;}
+    .section .intro span {
+        text-indent: 0!important;}
+    
+    #section2 .heading_main {
+        transform: none;}
+    #section2 p:first-child {
+        margin-top: 58px;
+    
+    }
+      #section5 p:first-child {
+     
+        text-align: left;
+    }
+    
+    #section2 .text-block {
+        margin-top: -36px;
+        text-align: justify;}
+    #pp-nav.right {
+    right: -10px!important;
+}
     .margin-t-15p {
         margin-top: 3%;}
     #section4 .intro {
