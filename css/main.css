@@ -6,6 +6,8 @@
 
 html {
   line-height: 1;
+    -webkit-font-smoothing: antialiased;
+
 }
 
 ol, ul {
@@ -237,6 +239,12 @@ header
 #section5 {
 
       background:url("../images/bg4.jpg") no-repeat!important; 
+     background-size: cover!important;
+}
+
+#section6 {
+
+      background:url("../images/contactbg.jpg") no-repeat!important; 
      background-size: cover!important;
 }
 
