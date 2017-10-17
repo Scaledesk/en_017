@@ -11,26 +11,26 @@
         <meta name="Resource-type" content="Document" />
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       <!--  fevicon-->
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+<link rel="manifest" href="images/favicons/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
         
         
-<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet">
               <link rel="stylesheet" href="css/bootstrap.min.css">
   
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -213,7 +213,7 @@ sgvrgfergerge
                 <div class="layer">
                     <div class="row">
                     <div class="col-md-3 col-md-offset-1">
-                        <div class="box"></div>
+<!--                        <div class="box"></div>-->
                         </div>
                           <div class="col-md-5">
                                <div class="right-block">
@@ -411,10 +411,10 @@ sgvrgfergerge
                         <div class="row margin-t-5p">
                         <div class="col-md-3 margin-t-8p">
                             
-                            <p>Regus JMD, Lorem ipsum<br>
+                            <p> Regus JMD, Lorem ipsum<br>
                                 Regent Square,<br>
                                 M.G. Road,<br>
-                                Gurgaon - 122002
+                                New Delhi - 112002
                             </p>
                             
                         </div>
@@ -495,5 +495,34 @@ sgvrgfergerge
             <script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
         <script src="https://use.fontawesome.com/c5c25a361c.js"></script>
                     <script type="text/javascript" src="js/main.js"></script>
+                    
+                    <script>
+        $(document).ready(function() {
+//alert(123);
+            var vid = document.getElementById("myVideo");
+            
+//            alert(456);
+
+
+//    alert(vid.playbackRate);
+
+
+function setPlaySpeed() { 
+    vid.playbackRate = 0.25;
+} 
+            
+  // place this within dom ready function
+ 
+//            function showpanel() {     
+//    document.querySelector('video').defaultPlaybackRate = 5.0;
+//  document.querySelector('video').play();
+// }
+
+ // use setTimeout() to execute
+ setTimeout(setPlaySpeed, 14000)
+
+});
+        
+        </script>
     </body>
 </html>
