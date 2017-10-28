@@ -263,7 +263,7 @@ header
 }
 .layer .arrow {
     text-align: center;
-    margin: 8% 0 0%;}
+    margin: 28% 0 0%;}
 #section4 .arrow{
 
     margin: 25% 0 0;
@@ -333,21 +333,35 @@ banner block (first)
     position: relative;
 }
 .right-block{
-        position: absolute;
-    /* top: 16%; */
+       
+     position: absolute;
+     top: 35px; 
     left: -82px;
-    top: 50px;
+  
+}
+
+
+.right-block .para{
+     position: absolute;
+    top:85px;
 }
 
 
             #section2 .intro{
                 left: -150%;
-                top:28%;
+                top:18%;
                 position: relative;
               
             }
+
+            #section2 .para{
+                left: -150%;
+                top:20%;
+                position: absolute;
+              
+            }
 #section2 .heading_main{
-        transform: rotate(-90deg);
+/*        transform: rotate(-90deg);*/
       text-indent: 3em;
 }
 
@@ -356,10 +370,10 @@ banner block (first)
                 display: none;
              
             }*/
-            #section2 p:first-child{
+     /*       #section2 p:first-child{
        
                 margin-top:5em;
-            }
+            }*/
           
 
 #section2 .intro span{
@@ -385,7 +399,7 @@ banner block (first)
 }
             #section4 .intro{
                  top: 22%;
-                
+                left:-150%;
                    position: relative;
                     padding: 0 60px;
                     width: 85%;
@@ -402,6 +416,7 @@ banner block (first)
                 #section5 .intro{
     
             top: 15%;
+                    left:150%;
     width: 80%;
     padding: 40px 16px;
     margin: 0 auto;
@@ -671,6 +686,7 @@ contact
   margin-bottom: 18px;
     font-size: 14px;
     border: 0px;
+    color:#fff;
     padding: 2px 0px;
     height: 60px;
     border-bottom: 1px solid #ccc;
@@ -765,14 +781,21 @@ media query
 @media (max-width: 768px) {
     .custm-logo {
         width: 50px;}
-    
+    .contact-form .form-control {
+     float:none;   
+        
+    }
       #myVideo{
              
                object-fit: fill;
     }
  .heading_main {
-    font-size: 3em!important;
+font-size: 2em!important;
 }
+    .layer .arrow {
+
+    margin: 100% 0 0%;}
+    
     #section1 .layer {
     position: absolute;
     z-index: 5;
@@ -783,7 +806,7 @@ media query
         height: 100%;}
     
   #section1 h2 {
-    font-size: 2.8em!important;
+       font-size: 2.2em!important;
 }
     
     .box {
@@ -806,9 +829,10 @@ top: 18%;
     .right-block {
     position: absolute;
     /* top: 16%; */
-    padding: 46px;
+            text-align: left;
+        padding: 0;
     left: 2em;
-       top: -25em;
+       top: -10px;
     }
     
     .mob .form-control {
@@ -833,7 +857,7 @@ top: 18%;
     
     #section2 .text-block {
         margin-top: -36px;
-        text-align: justify;}
+         text-align: left;}
     #pp-nav.right {
     right: -10px!important;
 }
@@ -852,13 +876,17 @@ top: 18%;
    #section6 h2 {
     font-size: 25px;}
       #section6  p {
-        font-size: 20px;}
+            font-size: 13px;}
     .arrow {
     text-align: center;
         margin: 32% 0 0%;}
     #section6 .intro {
        padding: 0px 40px 0 30px;
-    top: 15%;}
+  top: 7%;}
+
+#section6 .margin-t-8p {
+    margin-top: 0%;
+}
     .box-contact {
     margin-top: 20px;
     padding: 15px 20px;
@@ -870,7 +898,15 @@ top: 18%;
         height: 30px;}
     .contact-form textarea {
   
-        height: 90px!important;}
+        height: 80px!important;}
+    .contactbtn {
+    height: auto;
+        padding-top: 0px;}
+    .contactbtn .calltoaction {
+
+    padding: 6px 20px;
+    width: 100%;
+}
 
 .box-contact.flex-box {
 height:auto;

@@ -83,7 +83,20 @@ var console = { log: function() {} };
 
 
                         }
+                           //section 1
+                                 if(anchorLink == 'page1'){
+                           
+                            $('#section1').find('.right-block').delay(50).animate({
+                                top: '15px'
+                            }, 2500, 'easeOutExpo');
 
+                               $('#section1').find('.para').delay(80).animate({
+                                top: '80px'
+                            }, 1500, 'easeOutExpo');        
+                                 }
+          
+                        
+                        
                         //section 3
                         if(anchorLink == 'page3'){
                             //section 3
@@ -91,6 +104,39 @@ var console = { log: function() {} };
                                 left: '0%'
                             }, 1500, 'easeOutExpo');
                         }
+                        
+                           //section 4
+                        
+                                 if(anchorLink == 'page4'){
+                             $('#section4').find('.intro').delay(100).animate({
+                                left: '0%'
+                            }, 1500, 'easeOutExpo', function(){
+                                $('#section4').find('p').first().fadeIn(700, function(){
+                                    $('#section4').find('p').fadeIn(600);
+                                    $('#section4').find('p.anchor').fadeIn(500);
+                                });
+                            });
+       
+                                 }
+                        
+                               //section 5
+                        
+                                 if(anchorLink == 'page5'){
+                           
+                            $('#section5').find('.intro').delay(50).animate({
+                                left: '0%'
+                            }, 2500, 'easeOutExpo', function(){
+                                $('#section5').find('p').first().fadeIn(700, function(){
+                                    $('#section4').find('p').fadeIn(600);
+                                    $('#section4').find('p.anchor').fadeIn(500);
+                                });
+
+                                  
+                                 });
+                                 }
+                        
+                        
+                        
 
                         deleteLog = true;
                     }
@@ -218,7 +264,7 @@ sgvrgfergerge
                           <div class="col-md-5">
                                <div class="right-block">
                                   <h2 class="heading_main">Everything<br> <span>starts</span> with energy</h2>
-                    <p>We are a full service Design studio crafting extraordinary<br> online experiences for oil and gas companies.</p>
+                    <p class="para">We are a full service Design studio crafting extraordinary online <br>experiences for oil and gas companies.</p>
                    </div>
                         </div>
                     </div>
@@ -309,104 +355,12 @@ sgvrgfergerge
 
                     </div>
             </div>
-            <div class="section visible-xs mob" id="section6">
-              	<div class="intro">
-	    		<h2 class="heading_main">CONTACT</h2>
-                    <div class="row">
-                    <div class="col-md-8">
-                        <div class="box-contact">
-                            <form class="contact-form">
-                        <div class="row">
-                                                        <div class="col-xs-12">
-                                                            <div class="input-field">
-                                                                <input type="text" maxlength="20" class="form-control" required="" placeholder="Name" name="fname">
-                                                                <div>
-                                                              
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-
-
-                                                        <div class="col-xs-12">
-                                                            <div class="input-field">
-                                                                <input type="email" class="form-control" required="" placeholder="Email" name="email">
-                                                                <div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                        </div>
-   
-
-                                                             <div class="col-md-12">
-                                                            <div class="input-field">
-                                                                <textarea required="" class="form-control" maxlength="500" placeholder="Message" name="message" id="message"></textarea>
-                                                                <div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                                 
-                                                                 
-                                                           
-                                                        </div>
-                            
-                                                             <div class="col-md-12 text-left">
-                                                            <div class="input-field">
-                                                                <a type="submit" class="calltoaction">
-                                                                    submit
-                                                                </a>
-                                                                
-                                                                <div>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                             
-                                                        </div>
-
-                                                    </div>
-                            </form>
-                        
-                        </div>
-                        </div>
-                         <div class="col-md-4">
-                             <div class="box-contact flex-box">
-                                 <div class="child-flex">
-                             <p class="hidden-xs">YOU CAN ALSO CONTACT US ON SOCIAL NETWORK</p>
-                                    <span class="social-icon">
-                                        <a href="#" class="fa fa-facebook"></a>
-                                
-                                   <a href="#" class="fa fa-twitter"></a>
-                                     <a href="#" class="fa fa-google"></a>
-                                 </span>
-                                     
-                                     <br>
-                                     
-                                     <p>Mobile: +91 012456</p>
-                                       <p>Mail: du@gmail.com</p>
-                                 
-                                 </div>
-                              
-                                 </div>
-                        </div>
-                    </div>
-             
-	    	</div>
-                <div class="arrow bounce">
-
-                        <a class="fa fa-arrow-up fa-lg" href="#page1"></a>
-
-
-                    </div>
-            </div>
-
-       
-        
-            <div class="section hidden-xs" id="section6">
+    
+            <div class="section" id="section6">
               	<div class="intro">
 	    		<h1 class="heading_main">CONTACT US</h1>
                     <div class="text-block">
-	    		<p>Creating POWERFUL and IMPACTFUL content that intrigues/captivates your audience. We give your customers value in perpetuity using stunning editorial and video content by our in-house experts.</p>
+	    		<p class="hidden-xs">Creating POWERFUL and IMPACTFUL content that intrigues/captivates your audience. We give your customers value in perpetuity using stunning editorial and video content by our in-house experts.</p>
 
                         <div class="row margin-t-5p">
                         <div class="col-md-3 margin-t-8p">
@@ -422,7 +376,7 @@ sgvrgfergerge
                             <div class="col-md-9">
                                 <form class="contact-form">
                         <div class="row">
-                                                        <div class="col-xs-6">
+                                                        <div class="col-xs-12 col-md-6">
                                                             <div class="input-field">
                                                                 <input type="text" maxlength="20" class="form-control" required="" placeholder="Name" name="fname">
                                                                 <div>
@@ -434,7 +388,7 @@ sgvrgfergerge
 
 
 
-                                                        <div class="col-xs-6">
+                                                        <div class="col-xs-12 col-md-6">
                                                             <div class="input-field">
                                                                 <input type="email" class="form-control emailclass" required="" placeholder="Email" name="email">
                                                                 <div>
@@ -444,7 +398,7 @@ sgvrgfergerge
                                                         </div>
    
 
-                                                             <div class="col-md-6">
+                                                             <div class="col-xs-12 col-md-6">
                                                             <div class="input-field">
                                                                 <textarea required="" class="form-control" maxlength="500" placeholder="Message" name="message" id="message"></textarea>
                                                                 <div>
@@ -456,7 +410,7 @@ sgvrgfergerge
                                                            
                                                         </div>
                             
-                                                             <div class="col-md-6 ">
+                                                             <div class="col-xs-12 col-md-6">
                                                             <div class="input-field contactbtn">
                                                                 <a type="submit" class="calltoaction">
                                                                     Submit
@@ -498,6 +452,11 @@ sgvrgfergerge
                     
                     <script>
         $(document).ready(function() {
+            
+            
+      
+            
+            
 //alert(123);
             var vid = document.getElementById("myVideo");
             
@@ -522,6 +481,10 @@ function setPlaySpeed() {
  setTimeout(setPlaySpeed, 14000)
 
 });
+                        
+      
+     
+
         
         </script>
     </body>
