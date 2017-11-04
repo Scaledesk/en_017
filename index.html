@@ -68,17 +68,15 @@ var console = { log: function() {} };
                     },
                     afterLoad: function(anchorLink, index){
                         $('#callbacksDiv').append('<p>afterLoad - anchorLink:' + anchorLink + " index:" + index + '</p>');
-
+                    if($('.section').hasClass('active'))
+                    {
+                        $('.intro').fadeIn();
+                    }
                         //section 2
                         if(index == 2){
                            
-                            $('#section2').find('.intro').delay(100).animate({
+                            $('#section2').find('h1').delay(100).animate({
                                 left: '0%'
-                            }, 1500, 'easeOutExpo', function(){
-                                $('#section2').find('p').first().fadeIn(700, function(){
-                                    $('#section2').find('p').fadeIn(600);
-                                    $('#section2').find('p.anchor').fadeIn(500);
-                                });
                             });
 
 
@@ -92,7 +90,7 @@ var console = { log: function() {} };
 
                                $('#section1').find('.para').delay(80).animate({
                                 top: '80px'
-                            }, 1500, 'easeOutExpo');        
+                            }, 1500, 'easeOutExpo');      
                                  }
           
                         
@@ -100,7 +98,7 @@ var console = { log: function() {} };
                         //section 3
                         if(anchorLink == 'page3'){
                             //section 3
-                            $('#section3').find('.intro').delay(100).animate({
+                            $('#section3').find('h1').delay(100).animate({
                                 left: '0%'
                             }, 1500, 'easeOutExpo');
                         }
@@ -108,13 +106,8 @@ var console = { log: function() {} };
                            //section 4
                         
                                  if(anchorLink == 'page4'){
-                             $('#section4').find('.intro').delay(100).animate({
+                             $('#section4').find('h1').delay(100).animate({
                                 left: '0%'
-                            }, 1500, 'easeOutExpo', function(){
-                                $('#section4').find('p').first().fadeIn(700, function(){
-                                    $('#section4').find('p').fadeIn(600);
-                                    $('#section4').find('p.anchor').fadeIn(500);
-                                });
                             });
        
                                  }
@@ -123,15 +116,9 @@ var console = { log: function() {} };
                         
                                  if(anchorLink == 'page5'){
                            
-                            $('#section5').find('.intro').delay(50).animate({
+                            $('#section5').find('h1').delay(50).animate({
                                 left: '0%'
-                            }, 2500, 'easeOutExpo', function(){
-                                $('#section5').find('p').first().fadeIn(700, function(){
-                                    $('#section4').find('p').fadeIn(600);
-                                    $('#section4').find('p.anchor').fadeIn(500);
-                                });
-
-                                  
+                            
                                  });
                                  }
                         
@@ -262,7 +249,7 @@ sgvrgfergerge
 <!--                        <div class="box"></div>-->
                         </div>
                           <div class="col-md-5">
-                               <div class="right-block">
+                               <div class="right-block intro">
                                   <h2 class="heading_main">Everything<br> <span>starts</span> with energy</h2>
                     <p class="para">We are a full service Design studio crafting extraordinary online <br>experiences for oil and gas companies.</p>
                    </div>
@@ -277,10 +264,11 @@ sgvrgfergerge
                 </div>
             </div>
             <div class="section" id="section2">
+             <h1 class="heading_main reveal-text"><span>Energy to </span>Innovate</h1>
                 <div class="intro">
                    
                           
-                          <h1 class="heading_main"><span>Energy to </span>Innovate</h1>
+                         
                            <div class="text-block">
                           <p>Making your ideas visible GLOBALLY. Encod creates dynamic web solutions for oil and gas companies, taking your ideas to an astounding level of brilliance.</p>
                       
@@ -299,8 +287,9 @@ sgvrgfergerge
                     </div>
             </div>
             <div class="section" id="section3">
+            <h1 class="heading_main text-justify reveal-text"><span>Energy to</span> Emerge</h1>
 	    	<div class="intro">
-	    		<h1 class="heading_main text-justify"><span>Energy to</span> Emerge</h1>
+	    		
                     <div class="text-block">
 	    		<p>Building companies into BRANDS –Our branding wing is devoted to ensuring your brand presence in major events –crafting a gripping brand recall value.</p>
          
@@ -317,9 +306,10 @@ sgvrgfergerge
                     </div>
 	    </div>
             <div class="section" id="section4">
+            <h1 class="reveal-text heading_main">Energy to <span>Converge</span></h1>
                 <div class="intro">
               
-                          <h1 class="heading_main">Energy to <span>Converge</span></h1>
+                          
                  
                             <div class="text-block">
                              <p>Ensuring every penny of your marketing budget is well spent – We transfer your enthusiasm to your customer using METICULOUS targeted marketing, exploiting the latest technologies.</p>
@@ -338,8 +328,9 @@ sgvrgfergerge
                     </div>
             </div>
             <div class="section" id="section5">
+              <h1 class="heading_main reveal-text">Energy to <span> Inspire</span></h1>
               	<div class="intro">
-	    		<h1 class="heading_main">Energy to <span> Inspire</span></h1>
+	    	
                     <div class="text-block">
 	    		<p>Creating POWERFUL and IMPACTFUL content that intrigues/captivates your audience. We give your customers value in perpetuity using stunning editorial and video content by our in-house experts.</p>
 
@@ -357,8 +348,9 @@ sgvrgfergerge
             </div>
     
             <div class="section" id="section6">
+            <h1 class="reveal-text heading_main">CONTACT US</h1>
               	<div class="intro">
-	    		<h1 class="heading_main">CONTACT US</h1>
+	    		
                     <div class="text-block">
 	    		<p class="hidden-xs">Creating POWERFUL and IMPACTFUL content that intrigues/captivates your audience. We give your customers value in perpetuity using stunning editorial and video content by our in-house experts.</p>
 

@@ -345,17 +345,20 @@ banner block (first)
      position: absolute;
     top:85px;
 }
-
-
-            #section2 .intro{
-                left: -150%;
+ #section2 .intro{ 
                 top:18%;
                 position: relative;
               
             }
-
+       #section2 h1
+       {
+          left: -150%;
+          position: relative;
+          top:20%;
+       }
             #section2 .para{
-                left: -150%;
+
+                left: 0;
                 top:20%;
                 position: absolute;
               
@@ -376,53 +379,83 @@ banner block (first)
             }*/
           
 
-#section2 .intro span{
+#section2 h1 span{
         display: block;
     color: #fbd39f;
 }
-            #section3 .intro{
-          left: 140%;
-    top: 15%;
-     width: 80%;
-    padding: 32px 60px;
-    margin: 0 auto;
-    /* background: rgba(0, 0, 0, 0.32); */
-    position: relative;
-            }
+#section3 h1
+{
+     margin: 0 auto;
+     position: relative;
+     padding:0 60px;
+      top:20%;
+     left: 140%;
+}
+#section3 .intro
+{
+        left:0;  
+        top: 15%;
+         width: 80%;
+        padding: 32px 60px;
+        margin: 0 auto;
+        /* background: rgba(0, 0, 0, 0.32); */
+        position: relative;
+}
 #section3 .heading_main{
         font-size: 5em;
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 60px;
+        top: 20%;
+        left: 140%;
 }
-#section3 .intro span{
+#section3 h1 span{
         display: block;
     color: #ee655e;
     
 }
             #section4 .intro{
                  top: 22%;
-                left:-150%;
                    position: relative;
                     padding: 0 60px;
                     width: 85%;
                     margin: 0 auto;
               
             }
-
-#section4 .intro span{
+    #section4 h1
+    {
+      left:-150%;
+      position: relative;
+      width: 85%;
+      top:22%;
+                    margin: 0 auto;
+                    padding: 0 60px;
+    }
+#section4 h1 span{
         display: block;
     color: #6ef1e9;
     text-indent: 4.5em;
 }
+ #section5 h1{
+   left:150%;
+    margin: 0 auto;
+    width: 80%;
+    top:22%;
+    padding:0 16px;
+    position: relative;
+  }
             
                 #section5 .intro{
     
             top: 15%;
-                    left:150%;
+                    left:0;
     width: 80%;
     padding: 40px 16px;
     margin: 0 auto;
     position: relative;
             }
-#section5 .intro span{
+#section5 h1 span{
         display: block;
     color: #ddba8a;
 }
@@ -915,6 +948,57 @@ height:auto;
     .social-icon {
         margin: 10px 0 10px;}
 }
+.intro
+{
+  opacity: 0;
+}
+.active .intro
+ {
+    opacity: 1;
+    transition:opacity 4s ease;
+    -webkit-transition:opacity 4s ease;
+    -moz-transition:opacity 4s ease;
+}
+.reveal-text {
+    position: relative;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-animation-name: reveal-text;
+    animation-name: reveal-text;
+    white-space: nowrap;
+    cursor: default;
+}
+.reveal-text, .reveal-text:after {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-duration: 800ms;
+    animation-duration: 800ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
 
-
+.reveal-text::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f2f98b;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    pointer-events: none;
+    -webkit-animation-name: revealer-text;
+    animation-name: revealer-text;
+}
 
