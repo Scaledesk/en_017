@@ -437,7 +437,8 @@ banner block (first)
     color: #6ef1e9;
     text-indent: 4.5em;
 }
- #section5 h1{
+ #section5 h1
+ {
    left:150%;
     margin: 0 auto;
     width: 80%;
