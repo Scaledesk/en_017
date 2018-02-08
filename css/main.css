@@ -204,7 +204,7 @@ header
 
 
 #nav-main li + li {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 
@@ -254,6 +254,7 @@ header
 .arrow {
   text-align: center;
   margin: 16% 0 0%;
+    font-size: 22px;
 }
 .arrow:hover,.arrow a:hover{
         color: #59c5bc;
@@ -263,7 +264,9 @@ header
 }
 .layer .arrow {
     text-align: center;
-    margin: 28% 0 0%;}
+    margin: 28% 0 0%;
+    
+    }
 #section4 .arrow{
 
     margin: 25% 0 0;
@@ -465,11 +468,14 @@ banner block (first)
 #section6 .intro{
 position: relative;
     padding: 20px;
+    padding-top: 0;
     width: 80%;
     margin: 0 auto;
-    top: 12%;
-
+    top: 8%;
     text-align: justify;
+}
+#section6 .heading_main{
+  top:15px;
 }
     #section6  h2 {
         font-size: 2em;}
@@ -787,7 +793,7 @@ padding: 12px;
 
 .contact-form .form-control {
  
-    width: 82%;
+    width: 100%;
     float: right;
 }
 .emailclass{
@@ -800,8 +806,9 @@ padding: 12px;
 }
 
 .contactbtn .calltoaction{
-        border-radius: 0;
-    padding: 6px 116px;
+         border-radius: 0;
+    padding: 6px;
+    width: 100%;
 }
 
 
