@@ -291,6 +291,14 @@ p{
     background: #fff;
     color:#333;
 }
+#section6 .calltoaction{
+  border: 1px solid #59c5bc;
+  color:#59c5bc;	
+}
+#section6 .calltoaction:hover{
+  background: #59c5bc;
+    color:#fff;	
+}
 .calltoaction:focus{
 
     color:#fff;
