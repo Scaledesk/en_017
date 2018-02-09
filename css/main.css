@@ -266,6 +266,10 @@ header
 
     padding-top: 10px;
   }
+  #section6 .arrow {
+    margin-top:10px;
+    padding-top: 50px;
+  }
 
 .arrow:hover,.arrow a:hover{
         color: #59c5bc;
@@ -484,11 +488,11 @@ position: relative;
     padding-top: 0;
     width: 80%;
     margin: 0 auto;
-    top: 8%;
+    top: 15%;
     text-align: justify;
 }
 #section6 .heading_main{
-  top:15px;
+  top:80px;
 }
     #section6  h2 {
         font-size: 2em;}
@@ -504,7 +508,7 @@ position: relative;
         margin-top: 6%;
     }
 footer{
-        margin-top: 10%;
+        margin-top: 1%;
     padding:20px;
     border-top: 1px solid #fff;
 }
