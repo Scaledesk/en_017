@@ -46,7 +46,7 @@ a:hover,a:focus,a:active{
          text-decoration: none; 
 }
 .section .text-block{
-    margin-top:10px;
+        margin-top: 25px;
     text-align: left;
 }
 
@@ -404,18 +404,19 @@ banner block (first)
 #section2 .heading_main{
 /*        transform: rotate(-90deg);*/
      position: relative;
-      left: 8rem;
+         width: 28%;
+    margin: 0 auto;
      display: block;
-     width: auto;
-      display: inline-block;
+    
+      
   }
   #section2 h2 {
       font-size: 4em;
       text-transform: uppercase;
       font-family: headingfont;
       display: block;
-      width: 26%;
-      text-align: right;
+     
+      
       margin: 0 auto;
   }
   #section3 h2
@@ -492,18 +493,19 @@ banner block (first)
 #section6 .inner-section
 {
           
-            top: 12%;
+            top: 11%;
         
             padding-bottom: 0;
         margin: 0 auto;
+
         /* background: rgba(0, 0, 0, 0.32); */
         position: relative;
     
 }
 #section3 .heading_main{
       font-size: 4em;
-        width:auto;
-        display: inline-block;
+    width: 29%;
+     
         padding: 0;   }
             
  .inner-section {
@@ -541,13 +543,13 @@ banner block (first)
 #section4 h1 span{
         display: block;
     color: #6ef1e9;
-    text-indent: 4.5em;
+   
 }
  #section5 h1
  {
    /*left:150%;*/
     margin: 0 auto;
-    width: 80%;
+   width: 28%;
     top:22%;
     padding:0 16px;
     position: relative;
@@ -957,7 +959,7 @@ width: 100%!important;
 }
     .layer .arrow {
 
-    margin: 100% 0 0%;}
+    margin: 60% 0 0%;}
     
     #section1 .layer {
     position: absolute;
@@ -1267,5 +1269,10 @@ height:auto;
  }
  .active#section5 .reveal-text-sub:after {
     background: #ddba8a;
+ }
+
+ .active#section3 .reveal-text-sub.reveal-text:after {
+ background: #ee655e; 
+ width:75%;
  }
 
