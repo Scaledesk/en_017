@@ -929,6 +929,14 @@ media query
 */
 
 @media (max-width: 768px) {
+
+  .navbar-fixed-top.nav-mobile-custom {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
     .custm-logo {
         width: 50px;}
     .contact-form .form-control {
